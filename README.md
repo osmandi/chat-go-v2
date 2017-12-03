@@ -21,6 +21,11 @@ Nota: Está modificado para que corra en plataformas con SSL
 git clone https://github.com/osmandi/chat-go-v2
 ```
 
+- Instalar librería
+```
+go get github.com/gorrilla/websocket
+```
+
 - Cambiar la línea
   
   ```
@@ -34,7 +39,22 @@ git clone https://github.com/osmandi/chat-go-v2
 
 - Ejecutar
 ```
-cd src && go run main.go
+cd chat-go-v2/src && go run main.go
 ```
+
+# Correr en localhost con Docker
+- Modificar para que se pueda ejecutar sin SSL
+
+- Compilar
+```
+cd chat-go-v2
+docker build -t chat-go-v2 .
+```
+
+- Instanciar contenedor Docker
+```
+docker run -d -p 8080:8080 --name chat-go chat-go-v2
+```
+
 
 Abrir en un navegador ***localhost:8080***
