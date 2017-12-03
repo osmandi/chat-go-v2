@@ -8,13 +8,12 @@ y en el repo de github de [Gollum23](https://github.com/gollum23/chat-go)
 - Usa programación reactiva con VueJS
 - Es un websocket
 - Optimizado para concurrencia y bajo consumo de memoria
-- He implementado Docker
+- He implementado Docker (para hacer deploy a now.sh)
 
 # Demo
 [https://chat-go-v2-iudthzulys.now.sh/](https://chat-go-v2-iudthzulys.now.sh/)
 
-Nota:
- :Está modificado para que corra en plataformas con SSL
+Nota: Está modificado para que corra en plataformas con SSL
 
 # Correr en localhost
 - Clonar repositorio
