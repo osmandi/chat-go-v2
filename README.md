@@ -26,7 +26,7 @@ git clone https://github.com/osmandi/chat-go-v2
 go get github.com/gorrilla/websocket
 ```
 
-- Cambiar la línea
+- Cambiar la línea en ***public/app.js***
   
   ```
   this.ws = new WebSocket('wss://' + window.location.host + '/ws');
