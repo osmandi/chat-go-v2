@@ -14,7 +14,7 @@ y en el repo de github de [Gollum23](https://github.com/gollum23/chat-go)
 [https://chat-go-v2-iudthzulys.now.sh/](https://chat-go-v2-iudthzulys.now.sh/)
 
 Nota:
- :Está modificado par que corra en plataformas con SSL
+ :Está modificado para que corra en plataformas con SSL
 
 # Correr en localhost
 - Clonar repositorio
@@ -23,7 +23,7 @@ git clone https://github.com/osmandi/chat-go-v2
 ```
 
 - Cambiar la línea
-:::js
+  
   ```
   this.ws = new WebSocket('wss://' + window.location.host + '/ws');
   ```
@@ -31,7 +31,7 @@ git clone https://github.com/osmandi/chat-go-v2
   ```
   this.ws = new WebSocket('ws://' + window.location.host + '/ws');
   ```
-:::js
+  
 
 - Ejecutar
 ```
