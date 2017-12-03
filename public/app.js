@@ -6,7 +6,7 @@ new Vue({
         newMsg: '', // Holds new messages to be sent to the server
         chatContent: '', // A running list of chat messages displayed on the screen
         email: null, // Email addres used for grabbing an avatar
-        usename: null, // Our username
+        username: null, // Our username
         joined: false //True if email and username have been filled in
     },
 
@@ -17,12 +17,12 @@ new Vue({
             var msg = JSON.parse(e.data);
             self.chatContent += '<div class="chip">' 
                 + '<img src="' +self.gravatarURL(msg.email) + '">' // Avatar
-                + msg.usename
+                + msg.username
                 + '</div>'
                 + emojione.toImage(msg.message) + '<br/>'; // Parse emojis
 
             var element = document.getElementById('chat-messages');
-            element.scrollTop = elemet.scrollHeight; // Auto scroll to the bottom
+            element.scrollTop = element.scrollHeight; // Auto scroll to the bottom
 
         });            
     },
@@ -33,7 +33,7 @@ new Vue({
                 this.ws.send(
                     JSON.stringify({
                         email: this.email,
-                        username: this.username.,
+                        username: this.username,
                         message: $('<p>').html(this.newMsg).text() // Strip out html
 
                     }
